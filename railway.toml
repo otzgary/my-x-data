@@ -3,10 +3,4 @@ builder = "nixpacks"
 
 [deploy]
 startCommand = "python main.py"
-
-[[services]]
-name = "x-data-sheet-cron"
-
-[cron]
-schedule = "0 */4 * * *"
-command = "python main.py"
+cronSchedule = "0 */4 * * *"
